@@ -9,5 +9,9 @@
     "python.autoComplete.extraPaths": [],
     "python.terminal.activateEnvironment": true,
     "python.testing.cwd": "./backend/tests",
-    "python.testing.pytestPath": "./backend/.venv/bin/pytest"
-}
+    "python.testing.pytestPath": "./backend/.venv/bin/pytest",
+    "[markdown]": {
+      "editor.tabSize": 2,
+      "editor.insertSpaces": true
+    }
+  }
