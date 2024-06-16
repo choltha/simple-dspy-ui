@@ -10,7 +10,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import gradio as gr
 
-from app.simple_dspy_ui.ui import gradio_interface
+from app.simple_dspy_ui.ui import gui
 
 app = FastAPI(title="Simple DSPy UI")
 
@@ -27,7 +27,7 @@ if environment == "dev":
         allow_headers=["*"],
     )
 
-app = gr.mount_gradio_app(app, gradio_interface, path="/")
+app = gr.mount_gradio_app(app, gui, path="/")
 
 if __name__ == "__main__":
     uvicorn.run(app="main:app", host="0.0.0.0", reload=True)
