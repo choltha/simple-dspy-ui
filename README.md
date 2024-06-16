@@ -10,7 +10,7 @@ Maximum transparency:
 - Show progress (diff view betweeen steps?)
 
 
-Credit DSPy!!!
+Credits: DSPy is the backbone of this project.
 
 ## Roadmap
 
