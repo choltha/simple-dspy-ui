@@ -5,7 +5,9 @@ description = "Default template for PDM package"
 authors = [
     {name = "Christoph Holthaus", email = "christoph.holthaus+git@choltha.net"},
 ]
-dependencies = []
+dependencies = [
+    "dspy-ai>=2.4.9",
+]
 requires-python = "==3.11.*"
 readme = "README.md"
 license = {text = "-"}
