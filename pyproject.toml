@@ -1,0 +1,15 @@
+[project]
+name = "simple-dspy-ui"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Christoph Holthaus", email = "christoph.holthaus+git@choltha.net"},
+]
+dependencies = []
+requires-python = "==3.11.*"
+readme = "README.md"
+license = {text = "-"}
+
+
+[tool.pdm]
+distribution = false
