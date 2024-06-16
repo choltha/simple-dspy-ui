@@ -1,5 +1,6 @@
 # ---- app specific ----
-/flagged
+/cache/
+/flagged/
 
 # ---- generic ignore content by pdm ----
 # Byte-compiled / optimized / DLL files

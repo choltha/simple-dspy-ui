@@ -2,6 +2,19 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+import os
+import debugpy
+
+if os.getenv("DEBUG") == "1":
+    import debugpy
+    debugpy.listen(("localhost", 5678))
+    debugpy.wait_for_client()
+
+environment = os.getenv("ENVIRONMENT", "dev")  # Default to 'development' if not set
+
+os.environ['DSP_CACHEDIR'] = os.path.join(os.getcwd(), 'cache')
+os.environ['DSP_NOTEBOOK_CACHEDIR'] = os.environ['DSP_CACHEDIR']
+
 import logging
 import os
 
