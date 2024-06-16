@@ -24,6 +24,10 @@ Setup Steamlit locally. Implement fewshot:
 - API Key input field
 - Backend: Target Model is gpt-3.5-turbo, judge is gpt-4o
 
+## Techstack
+- dspy
+- streamlit for max prototyping speed
+
 
 ## Thinks to keep in Mind
 Avoid putting it on rails too much, magic comes from end-to-end AI experimentation!
