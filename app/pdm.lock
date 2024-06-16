@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:a38e3ec4adfd3e9d05d34a1185cff36a55a90906e36a64362f12655ddd9bfccb"
+content_hash = "sha256:d312b8c31c2d050b45aae8f74df1863ae5a30eb01993249ca1c97b354a21e81b"
 
 [[package]]
 name = "aiofiles"
@@ -286,6 +286,21 @@ dependencies = [
 files = [
     {file = "datasets-2.14.7-py3-none-any.whl", hash = "sha256:1a64041a7da4f4130f736fc371c1f528b8ddd208cebe156400f65719bdbba79d"},
     {file = "datasets-2.14.7.tar.gz", hash = "sha256:394cf9b4ec0694b25945977b16ad5d18d5c15fb0e94141713eb8ead7452caf9e"},
+]
+
+[[package]]
+name = "debugpy"
+version = "1.8.1"
+requires_python = ">=3.8"
+summary = "An implementation of the Debug Adapter Protocol for Python"
+groups = ["default"]
+files = [
+    {file = "debugpy-1.8.1-cp311-cp311-macosx_11_0_universal2.whl", hash = "sha256:016a9fcfc2c6b57f939673c874310d8581d51a0fe0858e7fac4e240c5eb743cb"},
+    {file = "debugpy-1.8.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fd97ed11a4c7f6d042d320ce03d83b20c3fb40da892f994bc041bbc415d7a099"},
+    {file = "debugpy-1.8.1-cp311-cp311-win32.whl", hash = "sha256:0de56aba8249c28a300bdb0672a9b94785074eb82eb672db66c8144fff673146"},
+    {file = "debugpy-1.8.1-cp311-cp311-win_amd64.whl", hash = "sha256:1a9fe0829c2b854757b4fd0a338d93bc17249a3bf69ecf765c61d4c522bb92a8"},
+    {file = "debugpy-1.8.1-py2.py3-none-any.whl", hash = "sha256:28acbe2241222b87e255260c76741e1fbf04fdc3b6d094fcf57b6c6f75ce1242"},
+    {file = "debugpy-1.8.1.zip", hash = "sha256:f696d6be15be87aef621917585f9bb94b1dc9e8aced570db1b8a6fc14e8f9b42"},
 ]
 
 [[package]]
