@@ -17,7 +17,7 @@ Credits: DSPy is the backbone of this project.
 ### Prototype
 
 #### MVP
-Setup Steamlit locally. Implement fewshot:
+Setup Gradio locally. Implement fewshot:
 - Meta description of what to do (Signature)
 - At least one example of how to do it (input / output)
 - Resulting Prompt for copy/paste to other tools
@@ -26,8 +26,7 @@ Setup Steamlit locally. Implement fewshot:
 
 ## Techstack
 - dspy
-- streamlit for max prototyping speed
-
+- gradio for max prototyping speed
 
 ## Thinks to keep in Mind
 Avoid putting it on rails too much, magic comes from end-to-end AI experimentation!
