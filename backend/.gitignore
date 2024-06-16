@@ -1,3 +1,7 @@
+# ---- app specific ----
+/flagged
+
+# ---- generic ignore content by pdm ----
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
