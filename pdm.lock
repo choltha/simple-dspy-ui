@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:4d1e02b812d4dc79c2319e7975c57be3ba3556ac7e7a93158d9f1a93f993797a"
+content_hash = "sha256:8b3ad0b97961b22d38b773b20cdfbcf62fadf2bde15dc05db73bc2fea196e8b3"
 
 [[package]]
 name = "aiohttp"
@@ -1335,7 +1335,6 @@ version = "4.0.1"
 requires_python = ">=3.8"
 summary = "Filesystem events monitoring"
 groups = ["default"]
-marker = "platform_system != \"Darwin\""
 files = [
     {file = "watchdog-4.0.1-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:17e32f147d8bf9657e0922c0940bcde863b894cd871dbb694beb6704cfbd2fb5"},
     {file = "watchdog-4.0.1-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:03e70d2df2258fb6cb0e95bbdbe06c16e608af94a3ffbd2b90c3f1e83eb10767"},
