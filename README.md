@@ -12,18 +12,6 @@ Maximum transparency:
 
 Credits: DSPy is the backbone of this project.
 
-## Roadmap
-
-### Prototype
-
-#### MVP
-Setup Gradio locally. Implement fewshot:
-- Meta description of what to do (Signature)
-- At least one example of how to do it (input / output)
-- Resulting Prompt for copy/paste to other tools
-- API Key input field
-- Backend: Target Model is gpt-3.5-turbo, judge is gpt-4o
-
 ## Techstack
 - dspy
 - gradio for max prototyping speed
