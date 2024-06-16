@@ -17,7 +17,7 @@ class SimpleDSPyUI:
         with gr.Blocks() as gui:
             gr.Markdown("## Simply optimize your prompts!")
             with gr.Row():
-                signature = gr.Textbox(label="A meta description of what your task is. Can be very concise.", placeholder="keywords -> Flash Fiction")
+                signature = gr.Textbox(label="A meta description of what your task is. Can be very concise.", placeholder="keywords -> Flash Fiction, 100 words max")
             gr.Markdown("A good example is worth 100 words of description.")
             with gr.Row():
                 example_task1_input = gr.Textbox(label="Example input context", placeholder="frog, jump, log")
