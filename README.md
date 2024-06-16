@@ -1,7 +1,7 @@
 # Simple DSPy Ui
 
 ## Goals
-Make it easy for people to use DSPy.
+Enable everyone to profit from DSPy super prompts.
 
 Main focus should be ease of use.
 
