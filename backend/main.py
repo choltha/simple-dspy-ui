@@ -21,14 +21,14 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import gradio as gr
 
-from app.dspy_models_config import gpt_turbo
+from app.dspy_models_config import gpt3_turbo
 
 # --- build stuff here before moving to modules ---
 
 # --- end of build area ---
 
 from app.simple_dspy_ui.ui import SimpleDSPyUI
-gui = SimpleDSPyUI(target_model=gpt_turbo, optimizer_model=gpt_turbo).create_ui()
+gui = SimpleDSPyUI(target_model=gpt3_turbo, optimizer_model=gpt3_turbo).create_ui()
 app = FastAPI(title="Simple DSPy UI")
 
 environment = os.getenv("ENVIRONMENT", "dev")  # Default to 'development' if not set
