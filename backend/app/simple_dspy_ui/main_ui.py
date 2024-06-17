@@ -8,10 +8,12 @@ class MainUi:
 
     def create_ui(self):
         generate_data_ui = GenerateDataUi(self.target_model, self.optimizer_model)
-        return gr.TabbedInterface(
-            [
-                generate_data_ui.create_ui(),
-                gr.Markdown("DSPy placeholder"),
-            ],
-            ["Data Generation", "DSPy"]
-        )
+        with gr.Blocks() as ui:
+            gr.Markdown("# DSPy")
+            gr.Markdown("DSPy is like machine learning for prompts. It needs a lot of data. To get you started, there is this first tab to generate data for your problem which you can then use on the 2nd Tab to actually apply DSPy to your problem and get an optimized prompt.")
+            with gr.Blocks():
+                with gr.Tab("Data Generation"):
+                    generate_data_ui.create_ui()
+                with gr.Tab("DSPy"):
+                    gr.Markdown("DSPy placeholder")
+        return ui
