@@ -27,8 +27,8 @@ from app.dspy_models_config import gpt3_turbo
 
 # --- end of build area ---
 
-from app.simple_dspy_ui.ui import SimpleDSPyUI
-gui = SimpleDSPyUI(target_model=gpt3_turbo, optimizer_model=gpt3_turbo).create_ui()
+from app.simple_dspy_ui.main_ui import MainUi
+gui = MainUi(target_model=gpt3_turbo, optimizer_model=gpt3_turbo).create_ui()
 app = FastAPI(title="Simple DSPy UI")
 
 environment = os.getenv("ENVIRONMENT", "dev")  # Default to 'development' if not set

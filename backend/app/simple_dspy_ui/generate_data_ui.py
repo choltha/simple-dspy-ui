@@ -2,7 +2,7 @@ import gradio as gr
 
 # from app.dspy_programs.simple_optimizer import optimize_prompt
 
-class SimpleDSPyUI:
+class GenerateDataUi:
     def __init__(self, target_model, optimizer_model):
         self.target_model = target_model
         self.optimizer_model = optimizer_model
