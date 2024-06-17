@@ -11,6 +11,12 @@ Setup Gradio locally. Implement fewshot:
 - Backend: Target Model is gpt-3.5-turbo, judge is gpt-4o
 
 
+### simple optimizer scenario
+- what optimizer can i use? would love to:
+  - user gives prompt. generate examples based on generations. Use those for bootstrap/test split, then run real optimizer. User can bring their own dataset if they want to
+  - how do do metric???
+  - ...
+
 
 ## resources:
 ### diff view
