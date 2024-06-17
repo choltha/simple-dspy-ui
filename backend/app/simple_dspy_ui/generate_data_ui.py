@@ -23,9 +23,15 @@ class GenerateDataUi:
     def test_prompt(self, optimized_prompt, test_input_context):
         return self.target_model(optimized_prompt + test_input_context)
     
+    def fill_demo_inputs(self):
+        return "keywords -> Flash Fiction, 100 words max", "frog, jump, log", "The frog jumps on the log, slips and lands on the ground."  # Add as many as needed
+
+    
     def create_ui(self):
         with gr.Blocks() as gui:
-            gr.Markdown("## Simply optimize your prompts!")
+            with gr.Row():
+                gr.Markdown("## Use this tab to generate data for your problem, if you have none.")
+                demo_button = gr.Button("Apply demo content to all fields")
             with gr.Row():
                 signature = gr.Textbox(label="A meta description of what your task is. Can be very concise.", placeholder="keywords -> Flash Fiction, 100 words max")
             gr.Markdown("A good example is worth 100 words of description.")
@@ -41,6 +47,7 @@ class GenerateDataUi:
                 test_input_context = gr.Textbox(label="Test prompt context", placeholder="A short story about becoming a butterfly.")
                 test_output = gr.Textbox(label="Test prompt result", interactive=False)
             test_button = gr.Button("Generate Test result")
+            demo_button.click(fn=self.fill_demo_inputs, outputs=[signature, example_task1_input, example_task1_gold_result])
             test_button.click(fn=self.test_prompt, inputs=[optimized_prompt, test_input_context], outputs=test_output)
             optimize_button.click(fn=self.optimize_prompt, inputs=[signature, example_task1_input, example_task1_gold_result], outputs=optimized_prompt)
         return gui
