@@ -8,7 +8,17 @@ class SimpleDSPyUI:
         self.optimizer_model = optimizer_model
 
     def optimize_prompt(self, signature, example_task1_input, example_task1_gold_result):
+
         return f"optimized prompt dummy - signature: {signature}, example_task1_input: {example_task1_input}, example_task1_gold_result: {example_task1_gold_result}"
+        """
+        UPDATE: Damn, this is copro, as we dont have fewshots right here ... maybe make the user put in 5 examples, 2 for fewshot, 3 for test
+        create new dspy program / runner
+        (maybe as background task? Unclear in regards to blocking the main thread and queuing  and so on)
+        add user defined signature
+        fewshot-bootstrap, for X iteration (do we need a field for X, maybe just 5 for now)
+        for now, use the one example by the user as TEST "set"
+        then show program which got best optimisation
+        """
 
     def test_prompt(self, optimized_prompt, test_input_context):
         return self.target_model(optimized_prompt + test_input_context)
