@@ -16,6 +16,12 @@ Add tooling to generate exactly such initial data to get the DSPy flywheel going
 1. Data generation. Not really DSPy but a loop to get some basic data going.
 2. DSPy Tab, use data generated on 1st Tab to run the actual DSPy experiments.
 
+## How to run
+- Install pdm if not installed yet
+- `cd backend`
+- `pdm install`
+- `pdm run main.py`
+
 ## Techstack
 - dspy
 - gradio for max prototyping speed
