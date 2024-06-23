@@ -33,4 +33,12 @@ Add tooling to generate exactly such initial data to get the DSPy flywheel going
 Avoid putting it on rails too much, magic comes from end-to-end AI experimentation!
 
 ## Ideas
-DSPy code export: Setup and experiment, be able to generate DSPy-Code which represents the setup.
+- DSPy code export: Setup and experiment, be able to generate DSPy-Code which represents the setup.
+
+- For the sections: Make them as userfriendly as possible by any means:
+  - More fully build out version: Have multiple "levels" of difficulty.
+    - 1 is "use simple language, no special terms (besides prompt) at all (no LM/LLM!), explain no concept at all" still provide somewhat useful output
+    - 2 offer explainer for some of things you have done, use basic terminology, use bubbles to explain them
+    - 3 assume user knows what a dataset, rl, llm, prompt is.
+  - Make it steamlined, needs to be simple ui! Maybe add a "enable expert mode" button hidden at the bottom, have the user have a maximally simple experience first. Use global state to copy any inputs on to other modes when switching tabs.
+  
