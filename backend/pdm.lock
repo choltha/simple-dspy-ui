@@ -4,8 +4,8 @@
 [metadata]
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
-lock_version = "4.4.1"
-content_hash = "sha256:d312b8c31c2d050b45aae8f74df1863ae5a30eb01993249ca1c97b354a21e81b"
+lock_version = "4.4.2"
+content_hash = "sha256:8cfa67260ece71b714d9a3a4398311453be9f97e51efffae9e9050172e3de4a7"
 
 [[package]]
 name = "aiofiles"
@@ -338,14 +338,14 @@ files = [
 
 [[package]]
 name = "dspy-ai"
-version = "2.4.9"
+version = "2.4.11"
 requires_python = ">=3.9"
 summary = "DSPy"
 groups = ["default"]
 dependencies = [
-    "backoff~=2.2.1",
-    "datasets<3.0.0,~=2.14.6",
-    "joblib~=1.3.2",
+    "backoff",
+    "datasets",
+    "joblib<=1.3.2",
     "openai<2.0.0,>=0.28.1",
     "optuna",
     "pandas",
@@ -357,8 +357,8 @@ dependencies = [
     "ujson",
 ]
 files = [
-    {file = "dspy-ai-2.4.9.tar.gz", hash = "sha256:5cf5dc30e976b244477851ca538133678330efeb60a54a79e0c94e9067d11d1a"},
-    {file = "dspy_ai-2.4.9-py3-none-any.whl", hash = "sha256:945f2a3110cfa9ac99ad5d326ae284fac619765ac7e2a35ca44873aed397eba1"},
+    {file = "dspy-ai-2.4.11.tar.gz", hash = "sha256:d91926c5b4e14a27d03b870d3b237cce42528cd07bc9669ffc10b0d40e942d66"},
+    {file = "dspy_ai-2.4.11-py3-none-any.whl", hash = "sha256:2182928235cbfdafe5e3624ce99ea0ca0dea73e2b2aa22b53bc80b863e442eb3"},
 ]
 
 [[package]]
