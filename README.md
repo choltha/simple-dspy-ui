@@ -35,7 +35,11 @@ Avoid putting it on rails too much, magic comes from end-to-end AI experimentati
 ## Ideas
 
 ### Examples
-Currently I use short stories, but i think logic puzzles are way more fun!
+- Currently I use short stories, but i think logic puzzles are way more fun!
+- Classical get X items across the river. But with other items. Like dog, cat, fish. Fix, chicken, stack of grain. Lion, zebra haybale. monkey, bannana coconut. 
+- Jokes? Could that work (for a narrow type of jokes)
+  - Topic -> joke; tomatoes; Three tomatoes cross a street. One gets driven over. The other ones say: come on, ketch up!
+- summarisation into tasks! This might be something every 2nd user tries to build, so this might resonate well.
 
 ### Hardware
 - Try to get it running with phi3 mini 4k (or 128k?) to run on a zero space on HF or on gguf if local? 
@@ -53,3 +57,6 @@ Currently I use short stories, but i think logic puzzles are way more fun!
     - 3 assume user knows what a dataset, rl, llm, prompt is.
   - Make it steamlined, needs to be simple ui! Maybe add a "enable expert mode" button hidden at the bottom, have the user have a maximally simple experience first. Use global state to copy any inputs on to other modes when switching tabs.
   
+
+### DSPy Optimisation
+- Use partial examples to get sub points of examples going with fewer tokens.

@@ -1,14 +1,18 @@
+import uvicorn
+if __name__ == "__main__":
+    uvicorn.run(app="main:app", host="0.0.0.0", reload=True)
+
 from dotenv import load_dotenv
 
 load_dotenv()
 
 import os
-import debugpy
+# import debugpy
 
-if os.getenv("DEBUG") == "1":
-    import debugpy
-    debugpy.listen(("localhost", 5678))
-    debugpy.wait_for_client()
+# if os.getenv("DEBUG") == "1":
+#     import debugpy
+#     debugpy.listen(("localhost", 5678))
+#     debugpy.wait_for_client()
 
 environment = os.getenv("ENVIRONMENT", "dev")  # Default to 'development' if not set
 
@@ -16,7 +20,6 @@ os.environ['DSP_CACHEDIR'] = os.path.join(os.getcwd(), 'cache')
 os.environ['DSP_NOTEBOOK_CACHEDIR'] = os.environ['DSP_CACHEDIR']
 
 import logging
-import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import gradio as gr
@@ -46,5 +49,3 @@ if environment == "dev":
 
 app = gr.mount_gradio_app(app, gui, path="/")
 
-if __name__ == "__main__":
-    uvicorn.run(app="main:app", host="0.0.0.0", reload=True)
