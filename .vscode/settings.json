@@ -2,11 +2,14 @@
     "python.defaultInterpreterPath": "./backend/.venv/bin/python",
     "python.analysis.autoSearchPaths": true,
     "python.analysis.extraPaths": [
-        "./backend/.venv/lib/python3.11/site-packages/"
+        "./backend/.venv/lib/python3.11/site-packages/",
+        "./backend/"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
-    "python.autoComplete.extraPaths": [],
+    "python.autoComplete.extraPaths": [
+      "./backend/"
+    ],
     "python.terminal.activateEnvironment": true,
     "python.testing.cwd": "./backend/tests",
     "python.testing.pytestPath": "./backend/.venv/bin/pytest",
