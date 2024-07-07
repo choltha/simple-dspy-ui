@@ -33,8 +33,19 @@ Add tooling to generate exactly such initial data to get the DSPy flywheel going
 Avoid putting it on rails too much, magic comes from end-to-end AI experimentation!
 
 ## Ideas
+
+### Examples
+Currently I use short stories, but i think logic puzzles are way more fun!
+
+### Hardware
+- Try to get it running with phi3 mini 4k (or 128k?) to run on a zero space on HF or on gguf if local? 
+  - Maybe can use code logic to auto run depending on stack.
+- Free A100 speed when using private HF space!
+
+### Export
 - DSPy code export: Setup and experiment, be able to generate DSPy-Code which represents the setup.
 
+### Section structure
 - For the sections: Make them as userfriendly as possible by any means:
   - More fully build out version: Have multiple "levels" of difficulty.
     - 1 is "use simple language, no special terms (besides prompt) at all (no LM/LLM!), explain no concept at all" still provide somewhat useful output
