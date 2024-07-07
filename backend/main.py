@@ -7,6 +7,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import os
+
+# # Copy paste below where i need it, cant start it here because of uvicorn reasons
 # import debugpy
 
 # if os.getenv("DEBUG") == "1":
