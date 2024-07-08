@@ -84,12 +84,20 @@ Add tooling to generate exactly such initial data to get the DSPy flywheel going
 ## Techstack
 - dspy
 - gradio for max prototyping speed and educational ui, use on HF with Zero GPUs
-  - need to validate if I can even use HF zero with dspy.
+  - need to validate if I can even use HF zero with DSPy.
 
 ### Hardware
-- Try to get it running with phi3 medium 4k (or 128k?) to run on a zero space on HF or on gguf if local? 
-  - Maybe can use code logic to auto run depending on stack.
-- Free A100 speed when using private HF space!
+- Base: Standard HF space (DSPy on its own doesn't need much juice)
+- Use Cached for first 2 Tabs, so no external connections should be necessary. (Maybe use 2 Models, like GPT-4o and Phi3-medium-4k)
+- For own data Tab: User can choose:
+  - Run on HF Zero with phi3-medium-4k
+  - Provide API key and openAI-compatible endpoint (with default for just openai (maybe hint at using openrouter for basically ALL LMs available ...))
+  - When run locally, llama.cpp / ollama can be used to run Phi3-med-4k on device (also phi3-mini as alternative for almost any device ...)
+
+## Privacy
+- Users should know stuff gets cached (forever?), user management probably not tirival to implement.
+- Be up front about it.
+- Offer "Copy Space" button for people who want privacy.
 
 ## Credits
 - DSPy is the backbone of this project
