@@ -39,8 +39,22 @@ class SimpleDspyTutorial:
                 with gr.Row():
                     gr.Markdown(dedent("""
                         - DSPy is a tool for optimizing prompts for LLMs. It is really powerful but can be intimidating at first.
+                                       
+                        - WHY DSPy? Everyone needs better prompts. [Insert Link to how its better than master prompter. Find prompts humans dont (but not always, no silverbullet)]
+                        - Usecases: save cost by downgrading model while keeping performance as-is, migrate existing workflow to different model (fast and without headache), @TODO add more!!!
+                                       
                         - This is a tutorial you can use to get the basic ideas.
-                        - This first tab uses common language to make it as easy as possible to get to know the concepts. If you want to skip ahead you can use the second tab instead.
+                        - This first tab uses common language to make it as easy as possible to get to know the basic idea behin it. 
+                                       
+                        - Some basic terms first (@todo or move at the approriate spot after the first fields???)
+                            - technique we use like COT or just direct zeroshot? (use nontechnical terms, put technical terms in paranthesis), continue using simple terms!!
+                            - why eval (do NOT metion metrics in this first tab, no need to know)
+                            - why examples?
+                                - we use them to TEST if our prompt optimisation worked or not. Having at least 10 gives a rough idea, more are better (at least 25, as many as you can get will drive up precision (and runtime/cost))
+                            - whats does DSPy do: provide the framework to define the task and how we want the lm to solve it (cot, zeroshot, fewshot(maybe more, better differenciated example)) and define how we want to optimize the params of how it solves it (= prompt)
+                                       
+                        - @todo hint we use copro here (but dont name it, just say a simple understandable algorythm which uses llms to find a more suitable prompt for a problem) as its more simple?
+                        - use copro as its more easy. Tell them "there are more powerful algos we will explore later"
                     """))
                     demo_button = gr.Button("Apply placeholder text as demo input into all fields.")
                 with gr.Row():
@@ -63,11 +77,17 @@ class SimpleDspyTutorial:
                 test_button.click(fn=self.test_prompt, inputs=[optimized_prompt, test_input_context], outputs=test_output)
                 optimize_button.click(fn=self.optimize_prompt, inputs=[signature, example_task1_input, example_task1_gold_result], outputs=optimized_prompt)
         with gr.Tab("More technical tutorial"):
-             gr.Markdown("DSPy this tutorial is still guardrailed, but it goes into more technical details. Best consumed after the first tutorial. ")
+            gr.Markdown("DSPy this tutorial is still guardrailed, but it goes into more technical details. Best consumed after the first tutorial. ")
             with gr.Row():
                 gr.Markdown(dedent("""
                     - DSPy stands for ....
-                    - 
+                    - We use MIPROv2 here (stands for ...)
+                    - introduces the concept of adding fewshots. This leverages examples to show the lm what is hard to convey in explaination. "Show, dont tell" (but in this case, also tell first ...)
+                    - later explain: We use chain of thought as its powerful and easy to unserstand
+                      - differenciate between the method a model will use in final generation (COT) vs how optimizers work to find the best prompt and examples using this "HOW" way of thinking.
+                    - we start with data: input -> output, but we can help LLM (citations here?!) when it thinks out loud (in text) about a problem first. So we generate those explainations and if they lead to a correct result we use them to teach HOW to think via fewshot to improve score on the task.
+                    - there are many more concepts instead of just chain of thought, but this is the one we use here ... Link to more in the bottom!
+                      - multihop, react, ???
                 """))
                 demo_button = gr.Button("Apply placeholder text as demo input into all fields.")
             with gr.Row():
