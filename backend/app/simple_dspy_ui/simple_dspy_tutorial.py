@@ -45,7 +45,7 @@ class SimpleDspyTutorial:
                                        
                         - This is a tutorial you can use to get the basic ideas.
                         - This first tab uses common language to make it as easy as possible to get to know the basic idea behin it. 
-                                       
+                        - some details might be oversimplified or glanced over, the next tab will go into more technical details. (should we mention this here? Maybe add at the bottom for motivation to do next TAB as well!)
                         - Some basic terms first (@todo or move at the approriate spot after the first fields???)
                             - technique we use like COT or just direct zeroshot? (use nontechnical terms, put technical terms in paranthesis), continue using simple terms!!
                             - why eval (do NOT metion metrics in this first tab, no need to know)
@@ -55,6 +55,7 @@ class SimpleDspyTutorial:
                                        
                         - @todo hint we use copro here (but dont name it, just say a simple understandable algorythm which uses llms to find a more suitable prompt for a problem) as its more simple?
                         - use copro as its more easy. Tell them "there are more powerful algos we will explore later"
+                        - metion caching somewhere appropriate and why we dont need any KEYs (its doing it FOR REAL but we recorded it so its just a replay... head over to the own problem & data tab to burn some credits on your own!)
                     """))
                     demo_button = gr.Button("Apply placeholder text as demo input into all fields.")
                 with gr.Row():

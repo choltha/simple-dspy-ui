@@ -12,6 +12,7 @@ class CoproOptimizer:
             question = dspy.InputField(desc="Context") #todo fixme!
             answer = dspy.OutputField(desc="Output") #todo fixme!
 
+        # IF WE UPGRADE to latest DSPy we might be able to skip this one. Make it more simple. Use Chainofthough directly.
         class CoTPipeline(dspy.Module):
             def __init__(self):
                 super().__init__()
