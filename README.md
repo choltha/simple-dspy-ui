@@ -1,11 +1,21 @@
 # Simple DSPy Ui
 
+**DISCLAIMER:** This is an archived version of aquick prototype to get a HF Gradio space for DSPy going, hacked in some free hours. 
+
+It's not usable or on MVP level yet.
+
+But I hope I might inspire you with the goal of this project and the UI/UX considerations.
+
+screenshot: ![screenshot](./screenshot.png)
+
+
+
 ## Goals of project
 Enable everyone to profit from DSPy super prompts.
 
 Main focus should be ease of use, easy slope on learning curve.
 
-## Usecases:
+## Usecases
 - switch existing pipeline to new model, but not time to adapt all prompts
   - just provide meta of what you are doing
   - metric optional (else f1 on example data)
